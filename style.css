@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+nav div h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+nav div ul {
+    display: flex;
+    gap: 40px;
+    
+}
+nav div ul li{
+    list-style-type: none;
+}
+nav div ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav div span{
+    font-size: 25px;
+    cursor: pointer;
+}
+nav .span{
+    display: none;
+}
+
+.img{
+    display:flex;
+    flex-wrap:wrap;
+    text-align: center;
+    justify-content: center;
+
+}
+
+div img{
+    padding-top: 30px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+}
+div h2{
+    display: none;
+}
+
+
+@media (max-width:600px) {
+
+    nav .span{
+        display: block;
+    }
+    nav div ul {
+        position: absolute;
+        display: inline;
+        top: 60px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgb(252, 242, 242);
+        height: 100%;
+        display: none;
+        animation-name: show_list;
+        animation-duration: 0.5s;
+    }
+    nav div ul li{
+        padding-top: 60px;
+    }
+    .close_list{
+        display: none;
+    }
+    div img{
+        width: 100%;
+        padding-top: 40px;
+        border-radius: 20px;
+    }
+    div h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+}
+
+
+
+@keyframes show_list {
+    0%{
+        margin-right:  100px;
+    }
+    
+}
+
+  
+    
+
+
